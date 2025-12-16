@@ -1,4 +1,4 @@
-# Recon-Ultra (Kali-only)
+# Recon-Ultra 
 
 **RECON ULTRA** is a Kali Linux–focused reconnaissance wrapper that combines passive OSINT and controlled active enumeration into clean, actionable outputs and a safe HTML report.
 
