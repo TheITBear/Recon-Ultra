@@ -1,8 +1,40 @@
-#!/usr/bin/env bash
-# =====================================================================
-# Recon ULTRA - Red Team Edition (stealth-ish, OSINT + passive/active light)
-# by The ITBear
-# =====================================================================
+banner_itbear() {
+  [[ "${QUIET:-0}" == "1" ]] && return 0
+
+  local ORANGE="\e[38;5;202m"   # IT Bear orange
+  local WHITE="\e[97m"
+  local DIM="\e[2m"
+  local RESET="\e[0m"
+
+  clear
+
+  cat <<EOF
+${ORANGE}########################################################################################
+#                                                                                      #
+#     ʕ•ᴥ•ʔ                                                                    ʕ•ᴥ•ʔ     #
+#    (  ) )        ${WHITE}██████╗ ███████╗ ██████╗ ██████╗ ███╗   ██╗${ORANGE}          ( (  )    #
+#   /|  |\\        ${WHITE}██╔══██╗██╔════╝██╔════╝██╔═══██╗████╗  ██║${ORANGE}         //|  |\\   #
+#    /    \\        ${WHITE}██████╔╝█████╗  ██║     ██║   ██║██╔██╗ ██║${ORANGE}           //    \\  #
+#   (      )       ${WHITE}██╔══██╗██╔══╝  ██║     ██║   ██║██║╚██╗██║${ORANGE}          (      ) #
+#    `-____-'      ${WHITE}██║  ██║███████╗╚██████╗╚██████╔╝██║ ╚████║${ORANGE}           `-____-' #
+#                     ${WHITE}╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝${ORANGE}                    #
+#                                                                                      #
+#                 ${WHITE}██╗   ██╗██╗  ████████╗██████╗  █████╗${ORANGE}                        #
+#                 ${WHITE}██║   ██║██║  ╚══██╔══╝██╔══██╗██╔══██╗${ORANGE}                        #
+#                 ${WHITE}██║   ██║██║     ██║   ██████╔╝███████║${ORANGE}                        #
+#                 ${WHITE}██║   ██║██║     ██║   ██╔══██╗██╔══██║${ORANGE}                        #
+#                 ${WHITE}╚██████╔╝███████╗██║   ██║  ██║██║  ██║${ORANGE}                        #
+#                 ${WHITE} ╚═════╝ ╚══════╝╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝${ORANGE}                        #
+#                                                                                      #
+#   ${WHITE}RECON ULTRA${ORANGE} • ${WHITE}Kali-only${ORANGE} • ${WHITE}Passive | Light | Active${ORANGE}      ${DIM}by The IT Bear${RESET}${ORANGE}  #
+#   ${DIM}Memento Mori • Use ONLY on assets you own or are explicitly authorized.${RESET}${ORANGE}           #
+#                                                                                      #
+########################################################################################${RESET}
+EOF
+}
+
+banner_itbear
+
 
 set -Eeuo pipefail
 IFS=$'\n\t'
