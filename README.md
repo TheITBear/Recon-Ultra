@@ -1,4 +1,4 @@
-# Recon ULTRA (ITBear)
+# Recon ULTRA 
 
 A **Kali-friendly**, bash-first recon pipeline that blends **OSINT + passive subdomain discovery + light active checks**
 with a clean folder structure and a single HTML report.
